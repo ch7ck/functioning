@@ -78,5 +78,9 @@ function json_explorer() {
     jq -C . $1 | less -R ;
 };
 
-echo "Functions were Loaded! View the functions by running a declare:"
-typeset -F | grep -v 'declare -f _'
+function viewfunctions() {
+    echo "Functions were Loaded! View the functions by running a declare:"
+    typeset -F | grep -v 'declare -f _'
+};
+
+viewfunctions
