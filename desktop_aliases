@@ -1,0 +1,12 @@
+# Aliases used for desktop work
+
+# xclip 
+alias ccclearclipboard='echo "" | xclip -r -selection clipboard'
+alias copydate='date | xclip -r -selection clipboard'
+alias copydateepoch='date +%s | xclip -r -selection clipboard'
+alias saveimageclipboard='xclip -o -selection clipboard >'
+
+# xrandr 
+alias bigScreenOff='xrandr --screen 1 --output HDMI-0 --off'
+alias bigScreenOn='DISPLAY=:0.1 xrandr --display :0.1 --output HDMI-0 --auto'
+alias changebig='xrandr --screen 1 --output HDMI-0 --brightness'
